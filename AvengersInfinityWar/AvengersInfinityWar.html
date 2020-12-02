@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="AvengersInfinityWar.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avengers: Infinity War</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><img src="logo.png" alt=""></a>
+    <div class="toggle"><a href="../../user.html"><img src="toggle.png" alt=""></a></div>
+    </header>
+    <div class="banner">
+        <div class="content">
+            <h2><span>Avengers Infinity War</span></h2>
+            <p>
+                As the Avengers and their allies have continued to protect the world from threats too large 
+                for any one hero to handle, a new danger has emerged from the cosmic shadows: Thanos. 
+                A despot of intergalactic infamy, his goal is to collect all six Infinity Stones, 
+                artifacts of unimaginable power, and use them to inflict his twisted will on all of reality. 
+                Everything the Avengers have fought for has led up to this moment, the fate of Earth and 
+                existence has never been more uncertain.....
+            </p>
+            <a href="#" class="play" onclick="toggle();"><img src="play.png" alt="">watch now</a>
+        </div>
+    </div>
+    <div class="trailer">
+        <video src="AvengersInfinityWar.mp4" controls="true"></video>
+        <img src="close.png" alt="" class="close" onclick="toggle();">
+    </div>
+    <script>
+        function toggle(){
+        var trailer=document.querySelector('.trailer');
+        let video=document.querySelector('.video');
+        trailer.classList.toggle('active');
+        video.currentTime = 0;
+        video.pause();
+    }
+    </script>
+</body>
+</html>

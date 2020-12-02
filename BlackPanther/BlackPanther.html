@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="BlackPanther.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Black Panther</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><img src="logo.png" alt=""></a>
+    <div class="toggle"><a href="../../user.html"><img src="toggle.png" alt=""></a></div>
+    </header>
+    <div class="banner">
+        <div class="content">
+            <h2><span>Black Panther</span></h2>
+            <p>
+                Thousands of years ago, five African tribes war over a meteorite containing the metal 
+                vibranium. One warrior ingests a "heart-shaped herb" affected by the metal and gains 
+                superhuman abilities, becoming the first "Black Panther". He unites all but the Jabari Tribe 
+                to form the nation of Wakanda. Over centuries, the Wakandans use the vibranium to develop 
+                advanced technology and isolate themselves from the world by posing as a Third World country. 
+                In 1992, Wakanda's King T'Chaka visits his brother N'Jobu, who is working undercover in Oakland, 
+                California.....
+            </p>
+            <a href="#" class="play" onclick="toggle();"><img src="play.png" alt="">watch now</a>
+        </div>
+    </div>
+    <div class="trailer">
+        <video src="BlackPanther.mp4" controls="true"></video>
+        <img src="close.png" alt="" class="close" onclick="toggle();">
+    </div>
+    <script>
+        function toggle(){
+        var trailer=document.querySelector('.trailer');
+        let video=document.querySelector('.video');
+        trailer.classList.toggle('active');
+        video.currentTime = 0;
+        video.pause();
+    }
+    </script>
+</body>
+</html>

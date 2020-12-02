@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avengers End Game</title>
+
+    <link rel="stylesheet" href="AvengersEndGame.css">
+
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><img src="logo.png" alt=""></a>
+    <div class="toggle"><a href="../../user.html"><img src="toggle.png" alt=""></a></div>
+    </header>
+    <div class="banner">
+        <div class="content">
+            <h2>Avengers <span>End Game</span> </h2>
+            <p>
+                Avengers: Endgame is a 2019 American superhero film based on the 
+                Marvel Comics superhero team the Avengers, produced by Marvel Studios 
+                and distributed by Walt Disney Studios Motion Pictures. It is the direct 
+                sequel to Avengers: Infinity War (2018) and the 22nd film in the Marvel 
+                Cinematic Universe (MCU). The film was directed by Anthony and Joe Russo 
+                and written by Christopher Markus and Stephen McFeely, and features an 
+                ensemble cast including Robert Downey Jr., Chris Evans, Mark Ruffalo, 
+                Chris Hemsworth, Scarlett Johansson, Jeremy Renner, Don Cheadle, 
+                Paul Rudd, Brie Larson, Karen Gillan, Danai Gurira, Benedict Wong, 
+                Jon Favreau, Bradley Cooper, Gwyneth Paltrow, and Josh Brolin....
+            </p>
+            <a href="#" class="play" onclick="toggle();"><img src="play.png" alt="">watch now</a>
+        </div>
+    </div>
+    <div class="trailer">
+        <video src="AvengersEndGame.mp4" controls="true"></video>
+        <img src="close.png" alt="" class="close" onclick="toggle();">
+    </div>
+
+
+
+    <script>
+        function toggle(){
+        var trailer=document.querySelector('.trailer');
+        let video=document.querySelector('.video');
+        trailer.classList.toggle('active');
+        video.currentTime = 0;
+        video.pause();
+    }
+    </script>
+</body>
+</html>
