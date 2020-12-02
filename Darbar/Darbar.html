@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="Darbar.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Darbar</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><img src="logo.png" alt=""></a>
+    <div class="toggle"><a href="../../user.html"><img src="toggle.png" alt=""></a></div>
+    </header>
+    <div class="banner">
+        <div class="content">
+            <h2><span>Darbar</span></h2>
+            <p>
+                Aaditya Arunachalam, the Commissioner of Mumbai Police, is seen killing numerous gangsters 
+                across Mumbai in police encounters. He is shown to be reckless and has become the target for 
+                widespread criticism and condemnation. His action finally prompt the National Human Rights 
+                Commission of India to take action against him. In a flashback, Aaditya, a distinguished cop, 
+                is assigned to take charge as the Commissioner of Police for Mumbai, in a bid by the police 
+                department to curb rampant drug-trafficking and prostitution in the city. He arrives in Mumbai 
+                with his daughter Valli, to take charge as the new Commissioner of Police. Upon arrival, 
+                he rescues three women, one of whom is the daughter of the Deputy Chief Minister of 
+                Maharashtra....
+            </p>
+            <a href="#" class="play" onclick="toggle();"><img src="play.png" alt="">watch now</a>
+        </div>
+    </div>
+    <div class="trailer">
+        <video src="Darbar.mp4" controls="true"></video>
+        <img src="close.png" alt="" class="close" onclick="toggle();">
+    </div>
+    <script>
+        function toggle(){
+        var trailer=document.querySelector('.trailer');
+        let video=document.querySelector('.video');
+        trailer.classList.toggle('active');
+        video.currentTime = 0;
+        video.pause();
+    }
+    </script>
+</body>
+</html>

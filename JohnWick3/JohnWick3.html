@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="JohnWick3.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John Wick 3</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><img src="logo.png" alt=""></a>
+    <div class="toggle"><a href="../../user.html"><img src="toggle.png" alt=""></a></div>
+    </header>
+    <div class="banner">
+        <div class="content">
+            <h2><span>John Wick 3</span> </h2>
+            <p>
+                Bound by an inescapable blood debt to the Italian crime lord, Santino D'Antonio, 
+                and with his precious 1969 Mustang still stolen, John Wick--the taciturn and pitiless 
+                assassin who thirsts for seclusion--is forced to visit Italy to honour his promise. 
+                But, soon, the Bogeyman will find himself dragged into an impossible task in the heart 
+                of Rome's secret criminal society, as every killer in the business dreams of cornering 
+                the legendary Wick who now has an enormous price on his head......
+            </p>
+            <a href="#" class="play" onclick="toggle();"><img src="play.png" alt="">watch now</a>
+        </div>
+    </div>
+    <div class="trailer">
+        <video src="JohnWick3.mp4" controls="true"></video>
+        <img src="close.png" alt="" class="close" onclick="toggle();">
+    </div>
+    <script>
+        function toggle(){
+        var trailer=document.querySelector('.trailer');
+        let video=document.querySelector('.video');
+        trailer.classList.toggle('active');
+        video.currentTime = 0;
+        video.pause();
+    }
+    </script>
+</body>
+</html>
