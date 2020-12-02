@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="PeterRabbit2TheRunaway.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peter Rabbit2 The Runaway</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><img src="logo.png" alt=""></a>
+    <div class="toggle"><a href="../../user.html"><img src="toggle.png" alt=""></a></div>
+    </header>
+    <div class="banner">
+        <div class="content">
+            <h2>Peter Rabbit 2 <span>The Runaway</span></h2>
+            <p>
+                Peter Rabbit 2: The Runaway (shortened as Peter Rabbit 2 in other territories) is an upcoming American 
+                live action/computer animated comedy film directed by Will Gluck and written by Patrick Burleigh and Gluck. 
+                The film is a sequel to 2018's Peter Rabbit and is based on the stories of Peter Rabbit created by Beatrix Potter. 
+                The film stars the voice of James Corden as the title character, alongside Rose Byrne, Domhnall Gleeson, 
+                and David Oyelowo in live-action roles, and the voices of Elizabeth Debicki and Margot Robbie. The film is currently 
+                scheduled to be released in the United Kingdom on December 11, 2020, and in the United States on January 15, 2021, by Sony 
+                Pictures Releasing under its Columbia Pictures label....
+            </p>
+            <a href="#" class="play" onclick="toggle();"><img src="play.png" alt="">watch trailer</a>
+        </div>
+    </div>
+    <div class="trailer">
+        <video src="PeterRabbit2TheRunaway.mp4" controls="true"></video>
+        <img src="close.png" alt="" class="close" onclick="toggle();">
+    </div>
+    <script>
+        function toggle(){
+        var trailer=document.querySelector('.trailer');
+        let video=document.querySelector('.video');
+        trailer.classList.toggle('active');
+        video.currentTime = 0;
+        video.pause();
+    }
+    </script>
+</body>
+</html>

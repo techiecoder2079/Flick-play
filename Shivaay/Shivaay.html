@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="Shivaay.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shivaay</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><img src="logo.png" alt=""></a>
+    <div class="toggle"><a href="../../user.html"><img src="toggle.png" alt=""></a></div>
+    </header>
+    <div class="banner">
+        <div class="content">
+            <h2><span>Shivaay</span></h2>
+            <p>
+                Shivaay is a well-known mountain climber/guide in Himalayas. On one of his adventure 
+                he meets Olga and both fall in love. Soon they discover that Olga is pregnant but she doesn't 
+                want the child. But Shivaay convinces her to give birth to the baby, Olga leaves the country 
+                after giving birth to his baby without even seeing her. 9 years later Shivaay's daughter Gaura 
+                finds that her mother is still alive and lives in Bulgaria. Gaura hates Shivaay for hiding the 
+                truth about her mother and insists on meeting her.....
+            </p>
+            <a href="#" class="play" onclick="toggle();"><img src="play.png" alt="">watch now</a>
+        </div>
+    </div>
+    <div class="trailer">
+        <video src="Shivaay.mp4" controls="true"></video>
+        <img src="close.png" alt="" class="close" onclick="toggle();">
+    </div>
+    <script>
+        function toggle(){
+        var trailer=document.querySelector('.trailer');
+        let video=document.querySelector('.video');
+        trailer.classList.toggle('active');
+        video.currentTime = 0;
+        video.pause();
+    }
+    </script>
+</body>
+</html>

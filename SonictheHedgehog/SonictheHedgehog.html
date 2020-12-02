@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="SonictheHedgehog.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sonic: the Hedgehog</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><img src="logo.png" alt=""></a>
+    <div class="toggle"><a href="../../user.html"><img src="toggle.png" alt=""></a></div>
+    </header>
+    <div class="banner">
+        <div class="content">
+            <h2><span>Sonic the Hedgehog</span></h2>
+            <p>
+                Based on the global blockbuster videogame franchise from Sega, SONIC THE HEDGEHOG tells the 
+                story of the world's speediest hedgehog as he embraces his new home on Earth. 
+                In this live-action adventure comedy, Sonic and his new best friend Tom (James Marsden) 
+                team up to defend the planet from the evil genius Dr. Robotnik (Jim Carrey) and his plans 
+                for world domination. The family-friendly film also stars Tika Sumpter and Ben Schwartz as 
+                the voice of Sonic....
+            </p>
+            <a href="#" class="play" onclick="toggle();"><img src="play.png" alt="">watch now</a>
+        </div>
+    </div>
+    <div class="trailer">
+        <video src="SonictheHedgehog.mp4" controls="true"></video>
+        <img src="close.png" alt="" class="close" onclick="toggle();">
+    </div>
+    <script>
+        function toggle(){
+        var trailer=document.querySelector('.trailer');
+        let video=document.querySelector('.video');
+        trailer.classList.toggle('active');
+        video.currentTime = 0;
+        video.pause();
+    }
+    </script>
+</body>
+</html>

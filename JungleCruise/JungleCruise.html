@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="JungleCruise.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jungle Cruise</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><img src="logo.png" alt=""></a>
+    <div class="toggle"><a href="../../user.html"><img src="toggle.png" alt=""></a></div>
+    </header>
+    <div class="banner">
+        <div class="content">
+            <h2><span>Jungle Cruise</span></h2>
+            <p>
+                Jungle Cruise is an upcoming American adventure film directed by Jaume Collet-Serra from a story by 
+                John Norville & Josh Goldstein and Glenn Ficarra & John Requa and a screenplay written by Michael Green, Glenn Ficarra 
+                and John Requa, based on Walt Disney's theme park attraction of the same name. Produced by Walt Disney Pictures, 
+                the film stars Dwayne Johnson, Emily Blunt, Édgar Ramírez, Jack Whitehall, Jesse Plemons, and Paul Giamatti....
+            </p>
+            <a href="#" class="play" onclick="toggle();"><img src="play.png" alt="">watch trailer</a>
+        </div>
+    </div>
+    <div class="trailer">
+        <video src="JungleCruise.mp4" controls="true"></video>
+        <img src="close.png" alt="" class="close" onclick="toggle();">
+    </div>
+    <script>
+        function toggle(){
+        var trailer=document.querySelector('.trailer');
+        let video=document.querySelector('.video');
+        trailer.classList.toggle('active');
+        video.currentTime = 0;
+        video.pause();
+    }
+    </script>
+</body>
+</html>

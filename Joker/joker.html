@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="joker.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><img src="logo.png" alt=""></a>
+    <div class="toggle"><a href="../../user.html"><img src="toggle.png" alt=""></a></div>
+    </header>
+    <div class="banner">
+        <div class="content">
+            <h2>put on a <span>Happy</span> face</h2>
+            <p>
+                Arthur Fleck works as a clown and is an aspiring stand-up comic. He has mental health issues, 
+                part of which involves uncontrollable laughter. Times are tough and, due to his issues and 
+                occupation, Arthur has an even worse time than most. Over time these issues bear down on him, 
+                shaping his actions, making him ultimately take on the persona he is more known as...Joker.....
+            </p>
+            <a href="#" class="play" onclick="toggle();"><img src="play.png" alt="">watch now</a>
+        </div>
+    </div>
+    <div class="trailer">
+        <video src="Joker.mp4" controls="true"></video>
+        <img src="close.png" alt="" class="close" onclick="toggle();">
+    </div>
+    <script>
+        function toggle(){
+        var trailer=document.querySelector('.trailer');
+        let video=document.querySelector('.video');
+        trailer.classList.toggle('active');
+        video.currentTime = 0;
+        video.pause();
+    }
+    </script>
+</body>
+</html>

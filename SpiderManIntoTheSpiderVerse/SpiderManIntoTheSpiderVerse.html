@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="SpiderManIntoTheSpiderVerse.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spide-Man Into The Spider-Verse</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><img src="logo.png" alt=""></a>
+    <div class="toggle"><a href="../../user.html"><img src="toggle.png" alt=""></a></div>
+    </header>
+    <div class="banner">
+        <div class="content">
+            <h2>Into the <span>Spider-Verse</span></h2>
+            <p>
+                The film grossed over $375 million worldwide against a $90 million budget. 
+                It received praise from critics for its animation, direction, characters, story, 
+                voice acting, humor and soundtrack, and won numerous awards, including Best Animated 
+                Feature at the 91st Academy Awards, 46th Annie Awards, and 76th Golden Globe Awards. 
+                It was the first non-Disney/Pixar film to win the Academy Award for Best Animated 
+                Feature since Rango (2011), as well as the first non-Disney/Pixar film since Happy 
+                Feet (2006) to win that award when a Disney or Pixar film was also in contention.... 
+            </p>
+            <a href="#" class="play" onclick="toggle();"><img src="play.png" alt="">watch now</a>
+        </div>
+    </div>
+    <div class="trailer">
+        <video src="SpiderManIntoTheSpiderVerse.mp4" controls="true"></video>
+        <img src="close.png" alt="" class="close" onclick="toggle();">
+    </div>
+    <script>
+        function toggle(){
+        var trailer=document.querySelector('.trailer');
+        let video=document.querySelector('.video');
+        trailer.classList.toggle('active');
+        video.currentTime = 0;
+        video.pause();
+    }
+    </script>
+</body>
+</html>

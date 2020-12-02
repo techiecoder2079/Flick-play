@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="ProjectPower.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Power</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><img src="logo.png" alt=""></a>
+    <div class="toggle"><a href="../../user.html"><img src="toggle.png" alt=""></a></div>
+    </header>
+    <div class="banner">
+        <div class="content">
+            <h2><span>Project Power</span></h2>
+            <p>
+                On the streets of New Orleans, word begins to spread about a mysterious new pill that unlocks 
+                superpowers unique to each user. The catch: You don't know what will happen until you take it. 
+                While some develop bulletproof skin, invisibility, and super strength, others exhibit a deadlier 
+                reaction. But when the pill escalates crime within the city to dangerous levels, a local cop 
+                (Joseph Gordon-Levitt) teams with a teenage dealer (Dominique Fishback) and a former soldier 
+                fueled by a secret vendetta (Jamie Foxx) to fight power with power and risk taking the pill 
+                in order to track down and stop the group responsible for creating it.....
+            </p>
+            <a href="#" class="play" onclick="toggle();"><img src="play.png" alt="">watch now</a>
+        </div>
+    </div>
+    <div class="trailer">
+        <video src="ProjectPower.mp4" controls="true"></video>
+        <img src="close.png" alt="" class="close" onclick="toggle();">
+    </div>
+    <script>
+        function toggle(){
+        var trailer=document.querySelector('.trailer');
+        let video=document.querySelector('.video');
+        trailer.classList.toggle('active');
+        video.currentTime = 0;
+        video.pause();
+    }
+    </script>
+</body>
+</html>

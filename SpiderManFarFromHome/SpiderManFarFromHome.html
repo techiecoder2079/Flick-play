@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="SpiderManFarFromHome.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spider-Man Far-From Home</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><img src="logo.png" alt=""></a>
+    <div class="toggle"><a href="../../user.html"><img src="toggle.png" alt=""></a></div>
+    </header>
+    <div class="banner">
+        <div class="content">
+            <h2><span>Spider-Man Far From Home</span></h2>
+            <p>
+                Following the events of Avengers: Endgame, Peter Parker (Tom Holland) returns 
+                in Spider-Man: Far From Home. Our friendly neighborhood Super Hero decides to join 
+                his best friends Ned, MJ, and the rest of the gang on a European vacation. However, 
+                Peter’s plan to leave super heroics behind for a few weeks is quickly scrapped when he 
+                begrudgingly agrees to help Nick Fury (Samuel L. Jackson) uncover the mystery of several 
+                elemental creature attacks. Spider-Man and Mysterio (Jake Gyllenhaal) join forces to fight 
+                the havoc unleashed across the continent but all is not as it seems.....
+            </p>
+            <a href="#" class="play" onclick="toggle();"><img src="play.png" alt="">watch now</a>
+        </div>
+    </div>
+    <div class="trailer">
+        <video src="SpiderManFarFromHome.mp4" controls="true"></video>
+        <img src="close.png" alt="" class="close" onclick="toggle();">
+    </div>
+    <script>
+        function toggle(){
+        var trailer=document.querySelector('.trailer');
+        let video=document.querySelector('.video');
+        trailer.classList.toggle('active');
+        video.currentTime = 0;
+        video.pause();
+    }
+    </script>
+</body>
+</html>

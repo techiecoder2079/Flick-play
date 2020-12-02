@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="Morbius.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Morbius</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><img src="logo.png" alt=""></a>
+    <div class="toggle"><a href="../../user.html"><img src="toggle.png" alt=""></a></div>
+    </header>
+    <div class="banner">
+        <div class="content">
+            <h2><span>Morbius</span></h2>
+            <p>
+                Morbius is an upcoming American superhero film based on the Marvel Comics character of the 
+                same name, produced by Columbia Pictures in association with Marvel. Distributed by Sony 
+                Pictures Releasing, it is intended to be the second film in the Sony Pictures Universe of 
+                Marvel Characters. The film is directed by Daniel Espinosa from a script by the writing teams 
+                of Matt Sazama and Burk Sharpless, and Art Marcum and Matt Holloway, and stars Jared Leto as 
+                Michael Morbius alongside Matt Smith, Adria Arjona, Jared Harris, Al Madrigal, and Tyrese 
+                Gibson. In the film, Morbius becomes a vampire after attempting to cure himself of a rare 
+                blood disease.....
+            </p>
+            <a href="#" class="play" onclick="toggle();"><img src="play.png" alt="">watch trailer</a>
+        </div>
+    </div>
+    <div class="trailer">
+        <video src="Morbius.mp4" controls="true"></video>
+        <img src="close.png" alt="" class="close" onclick="toggle();">
+    </div>
+    <script>
+        function toggle(){
+        var trailer=document.querySelector('.trailer');
+        let video=document.querySelector('.video');
+        trailer.classList.toggle('active');
+        video.currentTime = 0;
+        video.pause();
+    }
+    </script>
+</body>
+</html>
