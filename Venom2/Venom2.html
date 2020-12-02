@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="Venom2.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venom 2</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><img src="logo.png" alt=""></a>
+    <div class="toggle"><a href="../../user.html"><img src="toggle.png" alt=""></a></div>
+    </header>
+    <div class="banner">
+        <div class="content">
+            <h2><span>Venom 2: </span>Let There Be Carnage</h2>
+            <p>
+                Venom: Let There Be Carnage is an upcoming American superhero film based on the Marvel Comics 
+                character Venom, produced by Columbia Pictures in association with Marvel. Distributed by Sony 
+                Pictures Releasing, it is intended to be the third film in the Sony Pictures Universe of Marvel 
+                Characters and the sequel to Venom (2018). The film is being directed by Andy Serkis from a 
+                screenplay by Kelly Marcel, and stars Tom Hardy as Eddie Brock / Venom alongside Woody Harrelson, 
+                Michelle Williams, Reid Scott, and Naomie Harris....
+            </p>
+            <a href="#" class="play" onclick="toggle();"><img src="play.png" alt="">watch trailer</a>
+        </div>
+    </div>
+    <div class="trailer">
+        <video src="Venom2.mp4" controls="true"></video>
+        <img src="close.png" alt="" class="close" onclick="toggle();">
+    </div>
+    <script>
+        function toggle(){
+        var trailer=document.querySelector('.trailer');
+        let video=document.querySelector('.video');
+        trailer.classList.toggle('active');
+        video.currentTime = 0;
+        video.pause();
+    }
+    </script>
+</body>
+</html>

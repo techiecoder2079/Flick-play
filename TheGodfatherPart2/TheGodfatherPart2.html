@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="TheGodfatherPart2.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The God Father Part 2</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><img src="logo.png" alt=""></a>
+    <div class="toggle"><a href="../../user.html"><img src="toggle.png" alt=""></a></div>
+    </header>
+    <div class="banner">
+        <div class="content">
+            <h2>The <span>Godfather</span> </h2>
+            <p>
+                The Godfather Part II is a 1974 American epic crime film produced and directed by
+                 Francis Ford Coppola from the screenplay co-written with Mario Puzo, starring Al Pacino, 
+                 Robert Duvall, Diane Keaton, Robert De Niro, Talia Shire, Morgana King, John Cazale, Mariana 
+                 Hill, and Lee Strasberg. It is the second installment in The Godfather trilogy. Partially based 
+                 on Puzo's 1969 novel The Godfather, the film is both sequel and prequel to The Godfather, presenting 
+                 parallel dramas: one picks up the 1958 story of Michael Corleone (Pacino), the new Don of the Corleone
+                  family, protecting the family business in the aftermath of an attempt on his life....
+            </p>
+            <a href="#" class="play" onclick="toggle();"><img src="play.png" alt="">watch now</a>
+        </div>
+    </div>
+    <div class="trailer">
+        <video src="TheGodfatherPart2.mp4" controls="true"></video>
+        <img src="close.png" alt="" class="close" onclick="toggle();">
+    </div>
+    <script>
+        function toggle(){
+        var trailer=document.querySelector('.trailer');
+        let video=document.querySelector('.video');
+        trailer.classList.toggle('active');
+        video.currentTime = 0;
+        video.pause();
+    }
+    </script>
+</body>
+</html>

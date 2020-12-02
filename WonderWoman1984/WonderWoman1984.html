@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="WonderWoman1984.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wonder Woman 1984</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><img src="logo.png" alt=""></a>
+    <div class="toggle"><a href="../../user.html"><img src="toggle.png" alt=""></a></div>
+    </header>
+    <div class="banner">
+        <div class="content">
+            <h2>Wonder Woman <span>1984</span></h2>
+            <p>
+                Wonder Woman 1984 is an upcoming American superhero film based on the DC Comics character 
+                Wonder Woman. It is the sequel to 2017's Wonder Woman and the ninth installment in the DC 
+                Extended Universe (DCEU). The film is directed by Patty Jenkins from a script she wrote with 
+                Geoff Johns and David Callaham and a story by Johns and Jenkins. It will star Gal Gadot as 
+                Diana Prince / Wonder Woman, alongside Chris Pine, Kristen Wiig, Pedro Pascal, Robin Wright 
+                and Connie Nielsen in supporting roles. Set in 1984, during the Cold War, the film will 
+                follow Diana as she faces off against Maxwell Lord and Cheetah.....
+            </p>
+            <a href="#" class="play" onclick="toggle();"><img src="play.png" alt="">watch trailer</a>
+        </div>
+    </div>
+    <div class="trailer">
+        <video src="WonderWoman1984.mp4" controls="true"></video>
+        <img src="close.png" alt="" class="close" onclick="toggle();">
+    </div>
+    <script>
+        function toggle(){
+        var trailer=document.querySelector('.trailer');
+        let video=document.querySelector('.video');
+        trailer.classList.toggle('active');
+        video.currentTime = 0;
+        video.pause();
+    }
+    </script>
+</body>
+</html>

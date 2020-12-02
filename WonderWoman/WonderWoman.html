@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="WonderWoman.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wonder Woman</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><img src="logo.png" alt=""></a>
+    <div class="toggle"><a href="../../user.html"><img src="toggle.png" alt=""></a></div>
+    </header>
+    <div class="banner">
+        <div class="content">
+            <h2><span>Wonder Woman</span></h2>
+            <p>
+                In present-day Paris, Diana Prince receives a photographic plate from Wayne Enterprises 
+                (accompanied by a letter from Bruce Wayne) of herself and four men taken during World War I, 
+                prompting her to recall her past. The daughter of Queen Hippolyta, Diana is raised on the 
+                hidden island of Themyscira, home to the Amazons, women warriors created by the Olympian gods 
+                to protect mankind. Hippolyta explains their history to Diana, including how Ares became 
+                jealous of humanity and orchestrated its destruction. When the other gods attempted to stop 
+                him, Ares killed all but Zeus, who used the last of his power to wound Ares and force his 
+                retreat......
+            </p>
+            <a href="#" class="play" onclick="toggle();"><img src="play.png" alt="">watch now</a>
+        </div>
+    </div>
+    <div class="trailer">
+        <video src="WonderWoman.mp4" controls="true"></video>
+        <img src="close.png" alt="" class="close" onclick="toggle();">
+    </div>
+    <script>
+        function toggle(){
+        var trailer=document.querySelector('.trailer');
+        let video=document.querySelector('.video');
+        trailer.classList.toggle('active');
+        video.currentTime = 0;
+        video.pause();
+    }
+    </script>
+</body>
+</html>
